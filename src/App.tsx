@@ -1,12 +1,29 @@
-import { DarkThemeToggle } from "flowbite-react";
+"use client";
 
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./pages/Header.js";
+import Home from "./pages/Home.js";
+import Alain from "./pages/Alain.js";
+import PA from "./pages/PA.js";
+import NotFound from "./pages/NotFound.js";
+import Footer from "./components/Footer.js";
+
+
+export default function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center gap-2 dark:bg-gray-800">
-      <h1 className="text-2xl dark:text-white">Flowbite React + Vite</h1>
-      <DarkThemeToggle />
-    </main>
+    <div className="flex-col w-full">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />}>
+          <Route index element={<Home />} />
+          <Route path="alain" element={<Alain />} />
+          <Route path="pa" element={<PA />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    <Footer></Footer>
+    </div>
+
   );
 }
-
-export default App;
