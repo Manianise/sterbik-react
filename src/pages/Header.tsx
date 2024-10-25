@@ -6,7 +6,7 @@ export default function Header() {
 
     return (
       <>
-      <Navbar fluid>
+      <Navbar fluid className="fixed border-b w-full z-50">
         <Navbar.Brand href="/">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Famille Sterbik</span>
         </Navbar.Brand>
@@ -19,8 +19,8 @@ export default function Header() {
         </Navbar.Collapse>
         <DarkThemeToggle />
     </Navbar>
-    <main className="flex min-h-screen flex-col items-center justify-center dark:bg-gray-800">
-      
+    <main className="container mx-auto flex min-h-screen flex-col items-center justify-center dark:bg-gray-800">
+      <div className="h-24"></div>
       <Outlet />
     </main>
       </>
