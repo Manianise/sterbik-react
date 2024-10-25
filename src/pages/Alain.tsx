@@ -14,9 +14,9 @@ export default function Alain() {
                 Alain STERBIK
             </h1>
             <h2 className="dark:text-white font-semibold mb-5">Consultant en relations internationales</h2>
-            <div className="flex md:flex-row-reverse sm:flex-col justify-center my-5">
-                <div className="flex justify-center md:h-56 md:sticky md:top-48 mx-2 my-3">
-                    <img className="md:h-full" src="/assets/alain.webp" alt="photo-profil" />
+            <div className="flex md:flex-row-reverse flex-col justify-center my-5">
+                <div className="flex justify-center md:w-80 md:h-80 md:sticky md:top-48 mx-2 my-3">
+                    <img className="md:w-full md:h-full" src="/assets/alain.webp" alt="photo-profil" />
                 </div>
                 <div className="container mx-auto my-3">
                     <p className="mb-3 text-gray-500 dark:text-gray-400">
