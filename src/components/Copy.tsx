@@ -26,7 +26,7 @@ export default function Copy({ label = '', title = 'will be copied' }) {
 
     return (
         <>
-            <button type="button" onClick={copyToClipboard} className="flex md:flex-row sm:flex-col items-center justify-center  text-lg font-medium text-gray-600 dark:border-gray-600 dark:text-gray-400 dark:bg-gray-800 hover:text-blue-700 dark:hover:text-white copy-to-clipboard-button">
+            <button type="button" onClick={copyToClipboard} className="flex md:flex-row flex-col items-center justify-center  text-lg font-medium text-gray-600 dark:border-gray-600 dark:text-gray-400 dark:bg-gray-800 hover:text-blue-700 dark:hover:text-white copy-to-clipboard-button">
                 <span className="mx-5">{title} : {label}</span>
 
                 <div className="flex flex-row items-center">
